@@ -10,6 +10,7 @@ from database_setup import *
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.client import FlowExchangeError
 import os
+import sys
 import random
 import string
 import datetime
@@ -25,7 +26,8 @@ app = Flask(__name__)
 
 # Connect CLIENT_ID
 
-CLIENT_ID = json.loads(open('client_secrets.json', 'r').read())['web']['client_id']
+CLIENT_ID = json.loads(open('client_secrets.json', 'r').read())\
+['web']['client_id']
 APPLICATION_NAME = "Item-Catalog"
 
 # Contact with Data Base
