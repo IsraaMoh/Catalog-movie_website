@@ -24,7 +24,6 @@
                     </div>
                     <a href = "{{url_for('showItem', category_name = i.category.name, item_name = i.name)}}">
                         <h4>{{ i.name }}</h4>
-                        <h6 class="pull-right">Last update: {{ i.date.strftime("%-d-%b-%Y at %I:%M %p") }}</h6>
                         <h6>({{ i.category.name }})</h6>
                     </a>
                 </div>
